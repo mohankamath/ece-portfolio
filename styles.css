@@ -1,0 +1,66 @@
+:root {
+  color-scheme: light;
+  --ink: #20262c;
+  --muted: #4c555d;
+  --link: #234966;
+  --line: #d9dee2;
+  --surface: #f8f9fa;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-padding-top: 1.25rem; }
+body { margin: 0; background: #fff; color: var(--ink); font: 1rem/1.65 system-ui, sans-serif; }
+h1, h2, h3, h4, p, figure { margin: 0; }
+h1, h2, h3, h4 { line-height: 1.25; }
+h1 { font-size: clamp(2.15rem, 5vw, 3rem); letter-spacing: -.035em; }
+h2 { font-size: clamp(1.65rem, 3vw, 2rem); margin-bottom: .85rem; }
+h3 { font-size: 1.28rem; }
+h4 { font-size: 1.07rem; }
+a { color: var(--link); text-underline-offset: .18em; }
+:focus-visible { outline: 3px solid var(--link); outline-offset: 4px; }
+
+.wrap { width: min(100% - 3rem, 59rem); margin-inline: auto; }
+.skip { position: fixed; top: .75rem; left: .75rem; transform: translateY(-200%); z-index: 2; padding: .55rem .8rem; background: #fff; }
+.skip:focus { transform: none; }
+.site-header { border-bottom: 1px solid var(--line); }
+.header-inner { display: flex; justify-content: space-between; align-items: center; gap: .5rem 1.5rem; min-height: 3.8rem; }
+.brand { color: var(--ink); font-weight: 650; text-decoration: none; white-space: nowrap; }
+nav { display: flex; flex-wrap: wrap; gap: 0 1.25rem; }
+nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: .9rem; }
+nav a:hover, .brand:hover, .actions a:hover { text-decoration-thickness: 2px; }
+
+.hero { padding-block: clamp(2.25rem, 5vw, 3.5rem); }
+.hero-role { margin-block: .35rem .85rem; font-size: 1.12rem; font-weight: 550; }
+.hero p:last-child, .prose > p, .section > p { max-width: 68ch; }
+.section { padding-block: 2rem 2.45rem; border-top: 1px solid var(--line); }
+.prose > p + p { margin-top: .85rem; }
+.two-up { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2rem; }
+.subhead { margin-block: 1.75rem .85rem; }
+.thread { display: flex; flex-direction: column; align-items: flex-start; }
+.thread p { margin-block: .45rem 1rem; }
+.thread figure { margin-top: auto; }
+
+figure { width: 100%; }
+figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 3px; }
+figcaption { margin-top: .3rem; color: var(--muted); font-size: .85rem; }
+.project-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; max-width: 42rem; margin-top: 1rem; }
+.example-figure { max-width: 32rem; margin-block: 1rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 0 1.25rem; margin-top: .35rem; }
+.actions a { display: inline-flex; align-items: center; min-height: 44px; }
+.roadmap { max-width: 69ch; margin-block: .9rem 0; padding-left: 1.4rem; }
+.roadmap li + li { margin-top: .5rem; }
+.project + .project { border-top: 1px solid var(--line); margin-top: 1.4rem; padding-top: 1.4rem; }
+.project-detail { margin-top: .25rem; color: var(--muted); font-size: .9rem; }
+.project h4 { margin-block: 1.15rem .35rem; }
+.site-footer { border-top: 1px solid var(--line); background: var(--surface); font-size: .88rem; color: var(--muted); }
+.footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem 1rem; padding-block: 1.1rem; }
+.footer-name { color: var(--ink); font-weight: 650; }
+
+@media (max-width: 41rem) {
+  .wrap { width: calc(100% - 2rem); }
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 0; padding-top: .65rem; }
+  nav { column-gap: .9rem; }
+  nav a { font-size: .86rem; }
+  .two-up, .project-figures { grid-template-columns: 1fr; }
+  .thread figure, .project-figures { max-width: 29rem; }
+}

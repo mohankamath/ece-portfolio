@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="220" viewBox="0 0 600 220">
+  <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#34485c" opacity=".55"/></pattern></defs>
+  <rect width="600" height="220" fill="#14263a"/>
+  <rect width="600" height="220" fill="url(#grid)"/>
+  <g stroke="#daa654" stroke-width="2" fill="none">
+    <path d="M190 111h38m-9-7 9 7-9 7m154-7h38m-9-7 9 7-9 7"/>
+  </g>
+  <g stroke="#8198ad" fill="#1e3349">
+    <rect x="50" y="79" width="140" height="64" rx="6"/><rect x="410" y="79" width="140" height="64" rx="6"/>
+  </g>
+  <rect x="230" y="79" width="140" height="64" rx="6" fill="#3b352e" stroke="#daa654"/>
+  <g fill="#f8f4ea" font-family="monospace" font-size="16" text-anchor="middle" letter-spacing=".4">
+    <text x="120" y="116">REGISTER</text><text x="300" y="116" fill="#f2c777">COMPUTE</text><text x="480" y="116">REGISTER</text>
+  </g>
+  <g fill="#a9bacb" font-family="monospace" font-size="12" text-anchor="middle">
+    <text x="120" y="164">OPERANDS</text><text x="300" y="164">OPERATION</text><text x="480" y="164">RESULT</text>
+  </g>
+</svg>

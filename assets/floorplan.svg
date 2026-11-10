@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="328" viewBox="0 0 600 328">
+  <rect width="600" height="328" fill="#f7f1e4"/>
+  <rect x="90" y="39" width="420" height="250" rx="8" fill="#fffdfa" stroke="#ad9671" stroke-width="2"/>
+  <g fill="#ede6d8" stroke="#ad9671">
+    <rect x="118" y="73" width="107" height="67" rx="4"/>
+    <rect x="118" y="188" width="107" height="67" rx="4"/>
+    <rect x="375" y="73" width="107" height="67" rx="4"/>
+    <rect x="375" y="188" width="107" height="67" rx="4"/>
+  </g>
+  <g fill="none" stroke="#916023" stroke-width="2">
+    <path d="M225 107h25v40h17m-42 74h25v-40h17m66-34h17v-40h25m-42 74h17v40h25"/>
+    <path d="M225 116h17v40h25m-42 56h17v-40h25m66-16h25v-40h17m-42 56h25v40h17"/>
+  </g>
+  <rect x="266" y="123" width="68" height="82" rx="4" fill="#102033"/>
+  <g fill="#142235" font-family="system-ui, sans-serif" font-size="19" text-anchor="middle">
+    <text x="171" y="113">Memory</text>
+    <text x="171" y="228">Memory</text>
+    <text x="428" y="113">I/O</text>
+    <text x="428" y="228">I/O</text>
+    <text x="300" y="170" fill="#fffdfa">Core</text>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="328" viewBox="0 0 600 328">
+  <defs><pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1" fill="#af9d79" opacity=".32"/></pattern></defs>
+  <rect width="600" height="328" fill="#f7f1e4"/>
+  <rect width="600" height="328" fill="url(#dots)"/>
+  <g stroke="#ad9671" fill="#fffdfa">
+    <rect x="95" y="44" width="410" height="46" rx="7"/><rect x="95" y="108" width="410" height="46" rx="7"/>
+    <rect x="95" y="172" width="410" height="46" rx="7"/>
+  </g>
+  <rect x="95" y="236" width="410" height="46" rx="7" fill="#102033"/>
+  <g fill="none" stroke="#8a5a19" stroke-width="2"><path d="M300 90v15m-4-4 4 4 4-4m-4 53v15m-4-4 4 4 4-4m-4 53v15m-4-4 4 4 4-4"/></g>
+  <g font-family="Segoe UI, sans-serif" font-size="21" font-weight="700" text-anchor="middle" fill="#142235">
+    <text x="300" y="74">Synthesized netlist</text><text x="300" y="138">Placement</text><text x="300" y="202">Routing</text><text x="300" y="266" fill="#ebbf6d">Timing checks</text>
+  </g>
+</svg>

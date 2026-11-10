@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="220" viewBox="0 0 600 220">
+  <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#34485c" opacity=".55"/></pattern></defs>
+  <rect width="600" height="220" fill="#14263a"/>
+  <rect width="600" height="220" fill="url(#grid)"/>
+  <path d="M49 110h501m-8-5 8 5-8 5M50 179V40m-5 8 5-8 5 8" fill="none" stroke="#a0b0c2" stroke-width="1.2"/>
+  <path d="M50 110Q80 58 110 58T170 110T230 162T290 110T350 58T410 110T470 162T530 110" fill="none" stroke="#9eb9d2" stroke-width="2.5"/>
+  <g stroke="#e6b867" stroke-width="1.5" stroke-dasharray="3 3"><path d="M80 71v39m30-52v52m30-39v39m60 39v-39m30 52v-52m30 39v-39m60-39v39m30-52v52m30-39v39m60 39v-39m30 52v-52m30 39v-39"/></g>
+  <g fill="#f2c777">
+    <circle cx="50" cy="110" r="4"/><circle cx="80" cy="71" r="4"/><circle cx="110" cy="58" r="4"/><circle cx="140" cy="71" r="4"/><circle cx="170" cy="110" r="4"/>
+    <circle cx="200" cy="149" r="4"/><circle cx="230" cy="162" r="4"/><circle cx="260" cy="149" r="4"/><circle cx="290" cy="110" r="4"/><circle cx="320" cy="71" r="4"/>
+    <circle cx="350" cy="58" r="4"/><circle cx="380" cy="71" r="4"/><circle cx="410" cy="110" r="4"/><circle cx="440" cy="149" r="4"/><circle cx="470" cy="162" r="4"/>
+    <circle cx="500" cy="149" r="4"/><circle cx="530" cy="110" r="4"/>
+  </g>
+  <g fill="#c6d2dd" font-family="monospace" font-size="12" letter-spacing="1.2"><text x="65" y="44">AMPLITUDE</text><text x="550" y="187" text-anchor="end">TIME</text></g>
+</svg>

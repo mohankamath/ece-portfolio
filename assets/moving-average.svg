@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="218" viewBox="0 0 600 218">
+  <rect width="600" height="218" fill="#f8f9fa"/>
+  <g fill="#e6edf2" stroke="#a1b0bd">
+    <rect x="164" y="54" width="50" height="43" rx="4"/>
+    <rect x="224" y="54" width="50" height="43" rx="4"/>
+    <rect x="284" y="54" width="50" height="43" rx="4"/>
+    <rect x="344" y="54" width="50" height="43" rx="4"/>
+    <rect x="164" y="127" width="50" height="43" rx="4"/>
+    <rect x="224" y="127" width="50" height="43" rx="4"/>
+    <rect x="284" y="127" width="50" height="43" rx="4"/>
+  </g>
+  <rect x="344" y="127" width="50" height="43" rx="4" fill="#efe2c9" stroke="#947442"/>
+  <g fill="#20262c" font-family="system-ui, sans-serif" font-size="19" text-anchor="middle">
+    <text x="279" y="33">Samples, oldest to newest</text>
+    <text x="489" y="33">Average</text>
+    <text x="92" y="82">Before</text><text x="92" y="155">After</text>
+    <text x="189" y="82">4</text><text x="249" y="82">8</text>
+    <text x="309" y="82">4</text><text x="369" y="82">0</text>
+    <text x="189" y="155">8</text><text x="249" y="155">4</text>
+    <text x="309" y="155">0</text><text x="369" y="155">12</text>
+    <text x="489" y="82" font-weight="700">4</text>
+    <text x="489" y="155" font-weight="700">6</text>
+    <text x="369" y="195" font-size="17">New sample</text>
+  </g>
+</svg>
