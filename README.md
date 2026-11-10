@@ -19,9 +19,9 @@ This site uses plain HTML, CSS, and local SVG illustrations. Open `index.html` i
 
 ## Finish the Discovery Project Feature before the showcase
 
-The Musical Instrument article (`id="discovery"` in `index.html`) already has a **400+ word** write-up on the problem, process, and bench-test results. Use the showcase prompts to check that you’ve covered the required questions and add any newer results. Add at least **one photo or video you took or created of the project**. Save it in `assets/` and add it to the article with a short caption and descriptive alternative text for photos, or captions for any spoken video content.
+The Musical Instrument article (`id="discovery"` in `index.html`) has a **400+ word** write-up on the problem, process, and bench-test results, plus the supplied prototype photo and Iris Motion Studio screenshot. The showcase requires at least **one photo or video you took or created of the project**. Use the showcase prompts to check that you’ve covered the required questions and add any newer results.
 
-The completed portfolio needs **1,000 words and five visuals** in total. The site already clears both thresholds. The project diagram shows the signal path and the photo or video is a separate showcase requirement. Push the update to the same branch to keep the URL you submitted.
+The completed portfolio needs **1,000 words and five visuals** in total. The site already clears both thresholds. Push updates to the same branch to keep the URL you submitted.
 
 ## References
 

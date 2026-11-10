@@ -110,7 +110,7 @@
         <h2 id="projects-heading">Projects</h2>
         <nav class="project-index" aria-label="Jump to a project or technical note">
           <a href="#discovery">
-            <img src="assets/instrument-signal-flow.svg" width="600" height="176" alt="" loading="lazy">
+            <img class="project-thumbnail-photo" src="assets/instrument-prototype.webp" width="1280" height="721" alt="" loading="lazy">
             <strong>Musical Instrument</strong>
             <span>Discovery Project</span>
           </a>
@@ -128,6 +128,10 @@
         <article id="discovery" class="project prose">
           <h3>Musical Instrument</h3>
           <p class="project-detail">ECE 1100 Discovery Project</p>
+          <figure class="project-media">
+            <img src="assets/instrument-prototype.webp" width="1280" height="721" loading="lazy" alt="An ESP32-S3 Feather wired to a small motion sensor on the left, beside a separate display board on the right.">
+            <figcaption>Current instrument prototype with the Feather and motion sensor on the left and the display board on the right.</figcaption>
+          </figure>
           <h4>The problem</h4>
           <p>I’m working on a musical instrument that uses motion as an input. The idea is to move a handheld sensor and use that movement to control sound. I started with one gesture: tilt the sensor to trigger middle C, then bring it back toward level to release the note. That gave me a test I could repeat while working on the wireless link and the note logic. It also exposed a problem that would matter with more gestures: a player should be able to move naturally without getting extra notes or leaving one stuck on.</p>
           <h4>The process</h4>
@@ -137,6 +141,10 @@
             <figcaption>Signal path used for the wireless tilt bench test</figcaption>
           </figure>
           <p>The receiver waits until the sensor is near level before it can trigger a note. It starts C4 at about +22° of tilt and releases it below about +12°. Using different angles gives me some room to move without toggling the note right at the boundary. During an early bench test, the receiver still logged extra on and off events while I repositioned the sensor. The next version required the angle to stay past a threshold for 100 milliseconds before changing the note state. If the receiver stops getting fresh packets for 500 milliseconds, it releases the note without waiting for that hold.</p>
+          <figure class="project-media">
+            <img src="assets/iris-motion-studio.webp" width="1597" height="1022" loading="lazy" alt="Iris Motion Studio before connecting to a receiver, with a blank roll and pitch plot, an empty pose list, and MIDI note and volume controls.">
+            <figcaption>Iris Motion Studio before connecting the receiver, showing the roll and pitch plot and controls for mapping poses to MIDI notes and volume.</figcaption>
+          </figure>
           <h4>The outcome</h4>
           <p>The receiver got about 102–103 packets per second during the wireless test. After the 100-millisecond hold was added, the live bench log showed three tilt-and-return cycles in a row, each with one C4 note-on and one note-off. In a separate test, I unplugged the Feather while the note was active and checked that the receiver released it. When the link came back, the sensor had to return to level before another tilt could start a note.</p>
           <p>These tests verified that a wireless gesture could reliably produce a note event on the bench. I used Codex to help write and troubleshoot the test firmware, and used the logs from the physical boards to check the behavior. The next step is to connect the events to the synth and listen for how quickly the note starts and stops. The hold helped clean up the events in the log, but I still need to find out whether the delay feels natural when playing.</p>
