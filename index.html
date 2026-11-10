@@ -13,7 +13,7 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#home">Mohan Kamath</a>
-      <nav aria-label="Main navigation">
+      <nav class="primary-nav" aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#about">About Me</a>
         <a href="#resume">Résumé</a>
@@ -24,53 +24,74 @@
   </header>
 
   <main id="main" tabindex="-1">
-    <section class="hero wrap" aria-labelledby="intro-heading">
-      <h1 id="intro-heading">Mohan Kamath</h1>
-      <p class="hero-role">Computer engineering student at Georgia Tech</p>
-      <p>I transferred to Georgia Tech from the University of Georgia. I’m interested in digital hardware, VLSI, computer architecture, and signal processing. I’m part of the SiliconJackets Physical Design team, where I’m learning how circuit designs turn into chip layouts. My Discovery Project for ECE 1100 is a musical instrument I’ve been working on.</p>
+    <section class="hero" aria-labelledby="intro-heading">
+      <div class="hero-band">
+        <div class="wrap hero-frame">
+          <div class="hero-name">
+            <p class="course">ECE 1100 ePortfolio</p>
+            <h1 id="intro-heading">Mohan <span>Kamath</span></h1>
+            <p class="hero-role">Computer engineering student<br>Georgia Tech</p>
+          </div>
+          <figure class="hero-photo">
+            <img src="assets/tech-tower.webp" width="1200" height="900" alt="The brick facade and gold lettering of Tech Tower at Georgia Tech." fetchpriority="high">
+            <figcaption>Tech Tower · <a href="https://commons.wikimedia.org/wiki/File:Tech_Tower_Building_-_2.jpg">Photo by Mistercontributer</a></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="wrap welcome">
+        <p>I transferred to Georgia Tech from the University of Georgia. I’m interested in digital hardware, VLSI, computer architecture, and signal processing. I’m part of the SiliconJackets Physical Design team, where I’m learning how circuit designs turn into chip layouts. My Discovery Project for ECE 1100 is a musical instrument I’ve been working on.</p>
+        <div class="actions">
+          <a class="button" href="#projects">Explore projects</a>
+          <a class="button button-outline" href="#resume">View résumé</a>
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="section wrap" aria-labelledby="about-heading">
-      <h2 id="about-heading">About Me</h2>
-      <div class="prose">
+    <section id="about" class="section section-tinted" aria-labelledby="about-heading">
+      <div class="wrap">
+        <h2 id="about-heading">About Me</h2>
+        <div class="prose">
           <p>I started college at the University of Georgia and transferred to Georgia Tech to study computer engineering. One thing I like about the major is that I can take a question about how a computer works and follow it all the way down to the hardware. What does the system need to compute? Where is the data stored? How do the blocks that use it connect? I’m especially interested in the point where a choice that looks simple in a block diagram runs into a physical constraint.</p>
           <p>SiliconJackets’ Physical Design team is where I’m exploring that connection outside class. I want to understand what happens after a design is described in logic, including how components are placed, how signals are routed, and how engineers tell whether the layout meets timing requirements. For example, if two blocks communicate frequently, their placement can affect the length of the wires between them. Understanding that relationship helps me see why decisions about layout can matter to the behavior of the whole system.</p>
           <p>I also want to get better at explaining the reasoning behind a design. A diagram is most helpful to me when I can trace one input, identify where it changes, and say what I would measure at the output. That’s the kind of explanation I want to write for each project I add here, along with the questions that are still open.</p>
-      </div>
+        </div>
 
-      <h3 class="subhead">The threads I’m exploring</h3>
-      <div class="two-up">
-        <article class="thread">
-          <h4>Computing Hardware &amp; Emerging Architectures</h4>
-          <p>I’m drawn to architecture questions about where data lives and how it moves. If a processor spends much of its time waiting for data, adding more arithmetic units may leave the real bottleneck in place. CHEA is a way for me to study choices like this and learn how to evaluate them. I want to be able to point to a specific part of a design and explain how changing it would affect latency, area, or energy.</p>
-          <figure>
-            <img src="assets/datapath.svg" width="600" height="220" loading="lazy" alt="A register sends operands to a compute block, which writes a result to a destination register.">
-            <figcaption>A simple datapath</figcaption>
-          </figure>
-        </article>
-        <article class="thread">
-          <h4>Signal &amp; Information Processing</h4>
-          <p>I’m interested in how a system can turn a measurement into information it can use. Sampling and filtering raise practical questions. How often do I need to measure a signal? What part of it should a filter preserve? When I bring those questions back to hardware, I can also ask how much precision is enough and how much computation fits in the time between samples. Those connections are what make this thread a good complement to CHEA for me.</p>
-          <figure>
-            <img src="assets/sampling.svg" width="600" height="220" loading="lazy" alt="A continuous waveform with evenly spaced sample markers and stems extending to the time axis.">
-            <figcaption>Sampling a continuous signal</figcaption>
-          </figure>
-        </article>
+        <h3 class="subhead">The threads I’m exploring</h3>
+        <div class="two-up">
+          <article class="thread">
+            <h4>Computing Hardware &amp; Emerging Architectures</h4>
+            <p>I’m drawn to architecture questions about where data lives and how it moves. If a processor spends much of its time waiting for data, adding more arithmetic units may leave the real bottleneck in place. CHEA is a way for me to study choices like this and learn how to evaluate them. I want to be able to point to a specific part of a design and explain how changing it would affect latency, area, or energy.</p>
+            <figure>
+              <img src="assets/datapath.svg" width="600" height="220" loading="lazy" alt="A register sends operands to a compute block, which writes a result to a destination register.">
+              <figcaption>A simple datapath</figcaption>
+            </figure>
+          </article>
+          <article class="thread">
+            <h4>Signal &amp; Information Processing</h4>
+            <p>I’m interested in how a system can turn a measurement into information it can use. Sampling and filtering raise practical questions. How often do I need to measure a signal? What part of it should a filter preserve? When I bring those questions back to hardware, I can also ask how much precision is enough and how much computation fits in the time between samples. Those connections are what make this thread a good complement to CHEA for me.</p>
+            <figure>
+              <img src="assets/sampling.svg" width="600" height="220" loading="lazy" alt="A continuous waveform with evenly spaced sample markers and stems extending to the time axis.">
+              <figcaption>Sampling a continuous signal</figcaption>
+            </figure>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="resume" class="section wrap" aria-labelledby="resume-heading">
-      <h2 id="resume-heading">Résumé</h2>
-      <p>My résumé covers my education, technical experience, projects, and skills.</p>
+    <section id="resume" class="wrap resume-panel" aria-labelledby="resume-heading">
+      <div>
+        <h2 id="resume-heading">Résumé</h2>
+        <p>My résumé covers my education, technical experience, projects, and skills.</p>
+      </div>
       <div class="actions">
-        <a href="resume.pdf">View résumé (PDF)</a>
-        <a href="resume.pdf" download="Mohan-Kamath-Resume.pdf">Download résumé (PDF)</a>
+        <a class="button" href="resume.pdf">View résumé (PDF)</a>
+        <a class="button button-outline" href="resume.pdf" download="Mohan-Kamath-Resume.pdf">Download résumé (PDF)</a>
       </div>
     </section>
 
     <section id="goals" class="section wrap" aria-labelledby="goals-heading">
       <h2 id="goals-heading">Career Goals</h2>
-      <div class="prose">
+      <div class="goals-layout">
         <div class="prose">
           <p>I want to design digital hardware and understand how architectural choices hold up in a physical implementation.</p>
           <p>Long term, I’m interested in digital design, VLSI, and computer architecture roles. A hardware accelerator for a signal-processing task is one example of the work I’d like to explore. Before choosing an architecture, I’d want to know the required sample rate, how much data must be stored, and how much error is acceptable. Those requirements could lead to very different decisions about parallelism, memory, and numerical precision. I’d like to be able to explain those decisions and back them up with measurements.</p>
@@ -84,8 +105,26 @@
       </div>
     </section>
 
-    <section id="projects" class="section wrap" aria-labelledby="projects-heading">
+    <section id="projects" class="section section-tinted" aria-labelledby="projects-heading">
+      <div class="wrap">
         <h2 id="projects-heading">Projects</h2>
+        <nav class="project-index" aria-label="Jump to a project or technical note">
+          <a href="#discovery">
+            <img src="assets/instrument-signal-flow.svg" width="600" height="176" alt="" loading="lazy">
+            <strong>Musical Instrument</strong>
+            <span>Discovery Project</span>
+          </a>
+          <a href="#physical-design">
+            <img src="assets/floorplan.svg" width="600" height="328" alt="" loading="lazy">
+            <strong>SiliconJackets Physical Design</strong>
+            <span>Technical note</span>
+          </a>
+          <a href="#moving-average">
+            <img src="assets/moving-average.svg" width="600" height="218" alt="" loading="lazy">
+            <strong>Four-Sample Moving Average</strong>
+            <span>Worked example</span>
+          </a>
+        </nav>
         <article id="discovery" class="project prose">
           <h3>Musical Instrument</h3>
           <p class="project-detail">ECE 1100 Discovery Project</p>
@@ -102,7 +141,7 @@
           <p>The receiver got about 102–103 packets per second during the wireless test. After the 100-millisecond hold was added, the live bench log showed three tilt-and-return cycles in a row, each with one C4 note-on and one note-off. In a separate test, I unplugged the Feather while the note was active and checked that the receiver released it. When the link came back, the sensor had to return to level before another tilt could start a note.</p>
           <p>These tests verified that a wireless gesture could reliably produce a note event on the bench. I used Codex to help write and troubleshoot the test firmware, and used the logs from the physical boards to check the behavior. The next step is to connect the events to the synth and listen for how quickly the note starts and stops. The hold helped clean up the events in the log, but I still need to find out whether the delay feels natural when playing.</p>
         </article>
-        <article class="project prose">
+        <article id="physical-design" class="project prose">
             <h3>SiliconJackets Physical Design</h3>
             <p class="project-detail">Technical note</p>
             <p>One question I’m exploring through SiliconJackets is how an engineer can tell whether a design that works in a functional simulation will meet its clock target once implemented. In a simplified flow, placement assigns locations to cells and routing connects them with wires. The layout affects delays along signal paths, so the time available for a signal to travel from one register to the next matters alongside the logic itself.</p>
@@ -118,7 +157,7 @@
               </figure>
             </div>
         </article>
-        <article class="project prose">
+        <article id="moving-average" class="project prose">
           <h3>A four-sample moving average</h3>
           <p class="project-detail">Worked example</p>
           <p>A simple filter can take the four most recent input samples, add them, and divide by four. If the inputs are 4, 8, 4, and 0, the output is 4. When a new sample of 12 arrives, the oldest 4 drops out and the output becomes 6. That small example helps me connect the arithmetic to the registers that would store the samples and the logic that would update the result.</p>
@@ -129,6 +168,7 @@
           <p>With unsigned 8-bit samples, the largest sum is 1,020, so an exact accumulator needs 10 bits. If the output must be an integer, shifting right by two divides the sum by four and discards the remainder. Two cases I would test are four maximum inputs, which exercise the accumulator width, and a sum of 7, which makes the truncation visible. It’s a compact way to think about how a design choice affects the result a user sees.</p>
           <p>The filter reacts gradually to a sudden change. If the input jumps from zero to twelve and stays there, the outputs step through 3, 6, 9, and 12 as the four stored samples are replaced.</p>
         </article>
+      </div>
     </section>
   </main>
 

@@ -27,3 +27,4 @@ The completed portfolio needs **1,000 words and five visuals** in total. The sit
 
 - [Georgia Tech ECE computer engineering thread plans](https://ece.gatech.edu/undergraduate/curriculum-threads/cmpe-plans)
 - [GitHub Pages quickstart](https://docs.github.com/en/pages/quickstart)
+- [Tech Tower photograph by Mistercontributer, Wikimedia Commons, CC0](https://commons.wikimedia.org/wiki/File:Tech_Tower_Building_-_2.jpg)
